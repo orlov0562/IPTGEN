@@ -14,7 +14,7 @@ _END();
 
 ```
 generates next sh file:
-```
+```bash
 #!/bin/sh
 PATH=/usr/sbin:/sbin:/bin:/usr/bin
 
