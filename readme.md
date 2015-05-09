@@ -42,3 +42,13 @@ You can find information about iptables here:
 + http://www.opennet.ru/docs/RUS/iptables/
 + https://ru.wikipedia.org/wiki/Iptables
 ```
+
+USAGE:
+```
+Next command generates file "iptgen.sh" in iptgen script folder
+# php iptgen.php
+
+to output generated rules, you can use flag "print"
+# php iptgen.php print
+
+```
