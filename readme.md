@@ -1,4 +1,4 @@
-IPTGEN | 1.0 | https://github.com/orlov0562/IPTGEN
+IPTGEN | 0.1 | https://github.com/orlov0562/IPTGEN
 
 IPTGEN (Iptables Generator), generates iptables rules set from rule-wrappers.
 
