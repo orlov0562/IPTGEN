@@ -5,11 +5,12 @@ Iptables Generator - Generator, that generates iptables rules set from rule-wrap
 For example this simple rule-wrappers:
 ```php
 $wan = ['int' => 'ppp0'];
-$lan = ['int' => 'eth2', 'net' => '192.168.100.0/24'];
+$lan1 = ['int' => 'eth2', 'net' => '192.168.100.0/24'];
+$lan2 = ['int' => 'eth3', 'net' => '192.168.101.0/24'];
 
 _BEGIN();
 _CLEANUP;
-_MASQ($lan, $wan);
+_MASQ([$lan1, lan2], $wan);
 _END();
 
 ```
@@ -25,6 +26,8 @@ iptables -X
 iptables -A FORWARD -i ppp0 -m state --state ESTABLISHED,RELATED -j ACCEPT
 iptables -A FORWARD -i eth2 -o ppp0 -j ACCEPT
 iptables -t nat -A POSTROUTING -o ppp0 -s 192.168.100.0/24 -j MASQUERADE
+iptables -A FORWARD -i eth3 -o ppp0 -j ACCEPT
+iptables -t nat -A POSTROUTING -o ppp0 -s 192.168.101.0/24 -j MASQUERADE
 echo 1 > /proc/sys/net/ipv4/ip_forward
 ```
 
