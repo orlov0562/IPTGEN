@@ -5,10 +5,7 @@ Iptables Generator - Generator, that generates iptables rules set from rule-wrap
 For example this simple rule-wrappers:
 ```php
 $wan = ['int' => 'ppp0'];
-$lan = [ 
-	'int' => 'eth2',
-	'net' => '192.168.100.0/24',
-];
+$lan = ['int' => 'eth2', 'net' => '192.168.100.0/24'];
 
 _BEGIN();
 _CLEANUP;
@@ -31,7 +28,7 @@ iptables -t nat -A POSTROUTING -o ppp0 -s 192.168.100.0/24 -j MASQUERADE
 echo 1 > /proc/sys/net/ipv4/ip_forward
 ```
 
-For more examples see rules and functions in relevant dirs
+For more examples (snat, port forwarding and so on) see rules and functions in relevant dirs
 
 Keep in mind that it is just core that allows creating your own rule-wrappers for iptables command.
 So do not use generated rules if you do not understand what they really will do.
