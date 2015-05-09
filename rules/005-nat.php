@@ -27,3 +27,4 @@
 	
 	//_SNAT([$lan1, $lan2], $wan2); 	
 	_MASQ([$lan1, $lan2], $wan1);
+	

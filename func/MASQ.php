@@ -2,7 +2,7 @@
 
 function _MASQ($fromArr, $to) { 
 
-	if (!is_array($fromArr)) $fromArr = [$fromArr];
+	if (isset($fromArr['int'])) $fromArr = [$fromArr];
 
 	_UNIQUE('iptables -A FORWARD -i '.$to['int'].' -m state --state ESTABLISHED,RELATED -j ACCEPT');	
 	

@@ -2,7 +2,7 @@
 
 function _SNAT($fromArr, $to) { 
 
-	if (!is_array($fromArr)) $fromArr = [$fromArr];
+	if (isset($fromArr['int'])) $fromArr = [$fromArr];
 	
 	foreach($fromArr as $from) {
 		?>
