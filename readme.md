@@ -2,7 +2,7 @@ IPTGEN | 0.1 | https://github.com/orlov0562/IPTGEN
 
 IPTGEN (Iptables Generator), generates iptables rules set from rule-wrappers.
 
-For example this simple rule-wrappers:
+For example this simple IPTGEN script:
 ```php
 $wan = ['int' => 'ppp0'];
 $lan1 = ['int' => 'eth2', 'net' => '192.168.100.0/24'];
