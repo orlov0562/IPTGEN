@@ -9,8 +9,8 @@ $lan1 = ['int' => 'eth2', 'net' => '192.168.100.0/24'];
 $lan2 = ['int' => 'eth3', 'net' => '192.168.101.0/24'];
 
 _BEGIN();
-_CLEANUP;
-_MASQ([$lan1, lan2], $wan);
+_CLEANUP();
+_MASQ([$lan1, $lan2], $wan);
 _END();
 
 ```
