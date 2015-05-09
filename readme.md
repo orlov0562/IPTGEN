@@ -1,6 +1,6 @@
 Author: Vitaliy S. Orlov, orlov0562@gmail.com | Version: 0.1
 
-Iptables Generator - Generator, that generates iptables rules set from rule-wrappers.
+IPTGEN (Iptables Generator), generates iptables rules set from rule-wrappers.
 
 For example this simple rule-wrappers:
 ```php
