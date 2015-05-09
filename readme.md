@@ -1,4 +1,4 @@
-IPTGEN (Iptables Generator), generates iptables rules set from rule-wrappers.
+IPTGEN (Iptables Generator), generate iptables rules set from rule-wrappers.
 ---
 For example this simple IPTGEN script:
 ```php
