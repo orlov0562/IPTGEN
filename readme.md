@@ -1,7 +1,5 @@
 IPTGEN (Iptables Generator), generates iptables rules set from rule-wrappers.
 
-Version: 0.1 | https://github.com/orlov0562/IPTGEN
-
 For example this simple rule-wrappers:
 ```php
 $wan = ['int' => 'ppp0'];
@@ -42,3 +40,4 @@ You can find information about iptables here:
 + http://www.opennet.ru/docs/RUS/iptables/
 + https://ru.wikipedia.org/wiki/Iptables
 ```
+Signature: IPTGEN | https://github.com/orlov0562/IPTGEN
