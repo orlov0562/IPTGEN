@@ -1,3 +1,5 @@
+IPTGEN | 1.0 | https://github.com/orlov0562/IPTGEN
+
 IPTGEN (Iptables Generator), generates iptables rules set from rule-wrappers.
 
 For example this simple rule-wrappers:
@@ -40,4 +42,3 @@ You can find information about iptables here:
 + http://www.opennet.ru/docs/RUS/iptables/
 + https://ru.wikipedia.org/wiki/Iptables
 ```
-Signature: IPTGEN | https://github.com/orlov0562/IPTGEN
